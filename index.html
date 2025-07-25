@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particle Morphing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="webglCanvas"></canvas>
+    <div class="controls">
+        <label for="morphProgress">Morph Progress:</label>
+        <input type="range" id="morphProgress" min="0" max="100" value="0">
+    </div>
+
+    <script type="module">
+        // Import Three.js directly
+        import * as THREE from 'https://unpkg.com/three@0.165.0/build/three.module.js';
+        // Now you can use THREE in main.js
+        window.THREE = THREE;
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
